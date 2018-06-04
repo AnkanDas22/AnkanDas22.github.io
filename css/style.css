@@ -1,0 +1,264 @@
+body
+{
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;*/
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	background: #f4f4f4;
+}
+/* Global */
+.container
+{
+	width: 80%;
+	margin:auto;
+	overflow:hidden;
+
+}
+
+ul
+{
+
+	margin:0;
+	padding:0;
+}
+
+/* Header */
+header
+{
+	/*background: url("https://i.imgur.com/7lZnLmM.jpg") 1000px -200px;*/
+	animation-name: lepic;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	/*background: url("https://i.imgur.com/aSAI5NL.jpg") 0px -1475px;*/
+	color:#ffffff;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#e60000 10px solid;
+
+}
+
+@keyframes lepic
+	{	
+		/*from {background: url("https://i.imgur.com/aSAI5NL.jpg") 0px -1000px;}
+		to {background: url("https://i.imgur.com/aSAI5NL.jpg") 1920px -1000px;}*/
+		/*from {background: url("https://i.imgur.com/EaaJwiA.jpg") 0px -1000px;}
+		to {background: url("https://i.imgur.com/EaaJwiA.jpg") 2200px -1000px;}*/
+		/*from {background: url("https://i.imgur.com/rVy8TZD.jpg") 0px -1000px;}
+		to {background: url("https://i.imgur.com/rVy8TZD.jpg") 2200px -1000px;}*/
+		from {background: url("https://i.imgur.com/rVy8TZD.jpg") 0px -1000px;}
+		to {background: url("https://i.imgur.com/rVy8TZD.jpg") 1700px -1000px;}
+	}
+
+header a
+{
+
+	color:#ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li
+{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+
+header #toplogo
+{
+	float:left;
+
+}
+
+header #toplogo h1
+{
+	margin:0;
+	padding-bottom: 10px;
+}
+
+header nav
+{
+	float:right;
+	margin-top: 35px;
+}
+
+header .highlight, header .current a
+{
+	color:#ff0000;
+	font-weight: bold;
+}
+
+header .highlight
+{
+	font-size: 60px;
+	color:#e60000;
+	text-shadow: 1px 3px darkgrey;
+	transform: rotate(60deg);
+}
+
+header a:hover
+{
+	color:red;
+	font-weight: bold;
+}
+
+/* Showcase */
+#showcase
+{
+	min-height: 400px; 
+	background:url("http://www.markstons.com/wp-content/uploads/2017/11/cropped-Savin-NY-Website-Background-Web.jpg") no-repeat 0px -250px;
+	/*Keep extra images here
+	https://staticdelivery.nexusmods.com/mods/1151/images/9482-0-1454658455.jpg
+	http://www.markstons.com/wp-content/uploads/2017/11/cropped-Savin-NY-Website-Background-Web.jpg
+	http://images.akamai.steamusercontent.com/ugc/271725120242001645/F4F2FEF24C47D91610B79ECE4B655E2378C22998/
+	*/
+	text-align:center;
+	color:#ff4d4d;
+	text-shadow: 0px 2px #66ccff;
+}
+
+#contact
+{
+	padding:15px;
+	color:white;
+	margin-top: 0px;
+	/*background: url("https://78.media.tumblr.com/906af669fb4c67c44c447b3ba39f1e13/tumblr_oi9tju2o6k1qgivo1o2_1280.jpg") -180px -100px;*/
+	/*background: url("https://i.imgur.com/V2OD4x7.jpg") -180px -200px;*/
+	background-color: darkgrey;
+}
+
+#contact h1
+{
+	float: left;
+	color: white;
+	text-shadow: 0px 2px grey;
+}
+
+#contact form
+{
+	float:right;
+	margin-top: 15px;
+}
+
+#contact input[type="email"]
+{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:100%;
+  padding:20px;
+}
+
+#boxes .box img
+{
+  width:130px;
+}
+
+/* Sidebar */
+aside#sidebar
+{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea
+{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col
+{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li
+{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:30px;
+  margin-top:600px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #toplogo,
+  header nav,
+  header nav li,
+  #contact h1,
+  #contact form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #contact button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #contact form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+
+
+#kino
+{
+	font-size: 80px;
+}
+#kino1
+{
+	font-size: 20px;
+	text-shadow: 0px 1px pink;
+}
+#kino2
+{
+	font-size: 20px;
+	text-shadow: 1px 1px pink;
+}
+#kino3
+{
+	font-size: 30px;
+	text-shadow: 1px 2px #ff0066;
+}
